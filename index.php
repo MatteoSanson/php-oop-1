@@ -7,6 +7,7 @@ class Movie {
     public $releaseYear;
     public $genre;
 
+    // costruttore
     function __construct($_title, $_director, $_releaseYear, $_genre){
         $this -> title = $_title;
         $this -> director = $_director;
@@ -15,14 +16,6 @@ class Movie {
     }
 }
 
-// $interstellar = new Movie();
-// $interstellar->title = "Interstellar";
-// $interstellar->director = "Christopher Nolan";
-// $interstellar->releaseYear = "2014";
-// $interstellar->genre = "Fantascienza";
-
-
-// var_dump($interstellar);
 
 $interstellar = new Movie("Interstellar", "Christopher Nolan", "2014", "Fantascienza");
 echo "Title: " . $interstellar -> title . "<br>";
