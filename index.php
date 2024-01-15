@@ -14,13 +14,20 @@ class Movie {
         $this -> releaseYear = $_releaseYear;
         $this -> genre = $_genre;
     }
+
+    // metodo
+    public function showInfo() {
+        echo "Titolo: {$this -> title} <br>";
+        echo "Regista: {$this -> director} <br>";
+        echo "Anno: {$this -> releaseYear} <br>";
+        echo "Genere: {$this -> genre} <br> <hr>";
+    }
 }
 
 
-$interstellar = new Movie("Interstellar", "Christopher Nolan", "2014", "Fantascienza");
-echo "Title: " . $interstellar -> title . "<br>";
-echo "Director: " . $interstellar -> director . "<br>";
-echo "Release Year: " . $interstellar -> releaseYear . "<br>";
-echo "Genre: " . $interstellar -> genre . "<br>";
+$interstellar = new Movie("Interstellar", "Christopher Nolan", 2014, "Fantascienza");
+
+echo "Film 1: <br><br>";
+$interstellar -> showInfo();
 
 
