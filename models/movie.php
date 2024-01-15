@@ -7,7 +7,7 @@ class Movie {
     public $title;
     public $director;
     public $releaseYear;
-    public $genre = array();
+    public $genre = [];
 
     // costruttore
     function __construct($_title, $_director, $_releaseYear, $_genre){
